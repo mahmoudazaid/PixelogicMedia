@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8f37829-beee-4ca7-91be-90a3d1b64b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/extnstions/ElementExtensions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/manual/UserRegisterationManual.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RegressionRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/UserRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UserRegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/UserRegisteration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/UserRegisteration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserRegistration.java" afterDir="false" />
-    </list>
+    <list default="true" id="b8f37829-beee-4ca7-91be-90a3d1b64b14" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
