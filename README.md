@@ -61,10 +61,13 @@ The Framework built with below main packages
 * Setup Java environment variables
 * Install Maven from [here](http://maven.apache.org/download.cgi)
 * Setup Maven environment variables
+* Install Allure from [here](https://github.com/allure-framework/allure2/releases/tag/2.13.0)
+* Setup Allure environment variable  
 * Install Chrome browser
 
 ### Usage
 * Clone the project to your local machine
 * Import the project to IntlliJ
 * Go to `src/test/java/runner` then choose which test suite that you need `TestRunner` or `RegressionRunner` right click and run
-* After running finished go to trminal and run this command `allure.bat serve allure-results`
+* After running finished go to terminal and run this command `allure.bat serve allure-results`
+  <img src="images/terminal.png" alt="Terminal">
