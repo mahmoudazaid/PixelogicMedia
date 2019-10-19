@@ -64,7 +64,7 @@ The Framework built with below main packages
 * Install Chrome browser
 
 ### Usage
-* Make sure 
 * Clone the project to your local machine
 * Import the project to IntlliJ
-* Go to `src/test/java/runner/TestRunner` and right click then run
+* Go to `src/test/java/runner` then choose which test suite that you need `TestRunner` or `RegressionRunner` right click and run
+* After running finished go to trminal and run this command `allure.bat serve allure-results`
