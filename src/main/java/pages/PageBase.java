@@ -1,20 +1,19 @@
 package pages;
 
 import browser.Driver;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import static extnstions.ElementExtensions.scrollIntoView;
+import static extnstions.ElementExtensions.waitUntilElementDisplayed;
 
-public class PageBase {
+public class PageBase extends Driver {
 
-//    protected WebDriver driver;
+//    protected static WebDriver driver;
 
     //Create Constructor
     public PageBase(WebDriver driver) {
-        PageFactory.initElements(Driver.driver, this);
+        PageFactory.initElements(driver, this);
     }
 
     public static void clickButton(WebElement button) {
@@ -33,12 +32,4 @@ public class PageBase {
         element.sendKeys(text);
     }
 
-    public static void scrollIntoView(WebElement element){
-        JavascriptExecutor js = (JavascriptExecutor) Driver.driver;
-        js.executeScript("arguments[0].scrollIntoView();", element);
-    }
-
-    public static void waitUntilElementDisplayed(WebElement locator,int timeoutInSeconds){
-        new WebDriverWait(Driver.driver, timeoutInSeconds).until(ExpectedConditions.visibilityOf(locator));
-    }
 }

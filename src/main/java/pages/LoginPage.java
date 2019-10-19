@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static extnstions.ElementExtensions.waitUntilElementDisplayed;
 import static pages.UserRegistrationPage.successMessage;
 
 public class LoginPage extends PageBase {

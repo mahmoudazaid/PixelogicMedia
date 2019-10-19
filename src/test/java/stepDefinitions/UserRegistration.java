@@ -12,11 +12,12 @@ import pages.DashBoardPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.UserRegistrationPage;
+import runner.Hooks;
 import utilities.Email;
 
 import javax.mail.*;
 
-public class UserRegistration extends Driver {
+public class UserRegistration extends Hooks {
 
     Email emailUtils = null;
     HomePage homeObject;
@@ -39,26 +40,26 @@ public class UserRegistration extends Driver {
 
     @When("I click on Sign Up")
     public void iClickOnRegister() {
-        homeObject = new HomePage(driver);
+        homeObject = new HomePage(Driver.driver);
         homeObject.openRegistrationPage();
-        Assert.assertTrue(driver.getCurrentUrl().contains("register"));
+        Assert.assertTrue(Driver.driver.getCurrentUrl().contains("register"));
     }
     @When("I click on login")
     public void iClickOnLogin() {
-        homeObject = new HomePage(driver);
+        homeObject = new HomePage(Driver.driver);
         homeObject.openLoginPage();
-        Assert.assertTrue(driver.getCurrentUrl().contains("login"));
+        Assert.assertTrue(Driver.driver.getCurrentUrl().contains("login"));
     }
 
     @And("I logout")
     public void iLogout() {
-        dashBoardObject = new DashBoardPage(driver);
+        dashBoardObject = new DashBoardPage(Driver.driver);
         dashBoardObject.logOut();
     }
 
     @And("I have entered user login data")
     public void iHaveEnteredUserLoginData() {
-        loginObject = new LoginPage(driver);
+        loginObject = new LoginPage(Driver.driver);
         loginObject.userLogin(email,password);
     }
 
@@ -70,7 +71,7 @@ public class UserRegistration extends Driver {
 
     @And("I have entered user registration data")
     public void iEnteredRegistrationData() throws InterruptedException {
-        userRegistrationObject = new UserRegistrationPage(driver);
+        userRegistrationObject = new UserRegistrationPage(Driver.driver);
         userRegistrationObject.userRegistration(firstName,lastName,mobileNumber,email,password,password);
         System.out.println("The First Name: " + firstName);
         System.out.println("The Last Name: " +lastName);

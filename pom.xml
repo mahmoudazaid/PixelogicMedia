@@ -84,6 +84,12 @@
             <artifactId>webdrivermanager</artifactId>
             <version>3.7.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>4.8.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
         <dependency>
             <groupId>javax.mail</groupId>
@@ -142,16 +148,6 @@
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M3</version>
-                    <configuration>
-                        <suiteXmlFiles>
-                            <suiteXmlFile>${testNGSuite}</suiteXmlFile>
-                        </suiteXmlFiles>
-                    </configuration>
-                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -170,33 +166,6 @@
             </plugin>
         </plugins>
     </build>
-
     <profiles>
-        <profile>
-            <id>regression</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-                <property>
-                    <name>environment</name>
-                    <value>regression</value>
-                </property>
-            </activation>
-            <properties>
-                <testNGSuite>regressionSuite.xml</testNGSuite>
-            </properties>
-        </profile>
-        <profile>
-            <id>full</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-                <property>
-                    <name>environment</name>
-                    <value>full</value>
-                </property>
-            </activation>
-            <properties>
-                <testNGSuite>testng.xml</testNGSuite>
-            </properties>
-        </profile>
     </profiles>
 </project>

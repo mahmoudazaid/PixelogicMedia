@@ -1,8 +1,9 @@
+@chrome
 Feature: User Registration
 
   I want to check that user can register and login in our website
 
-
+  @regression
   Scenario: User Registration
     Given I am on home page
     When I click on Sign Up
