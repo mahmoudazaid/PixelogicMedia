@@ -30,8 +30,7 @@
     ·
     <a href="https://github.com/mahmoudazaid/PixelogicMedia/issues">Request Feature</a>
   </p>
-</p>
-
+  
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
